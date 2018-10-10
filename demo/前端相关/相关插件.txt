@@ -1,0 +1,21 @@
+chrome 浏览器devtools插件
+    1、你可以从chrome应用商店里找到Vue.js devtools插件，如果你的chrome应用商店无法打开，用文件夹下的包，安装参考一下链接：
+    https://www.cnblogs.com/yuqing6/p/7440549.html
+
+vscode 开发vue的常用插件
+      Auto Close Tag 自动补全html标签
+      Auto Rename Tag 同步更改html尾标签
+      ESLint ESlint 语法提示
+      HTML CSS Support css语法提示
+      HTML Snippets html标签提示
+      JavaScript (ES6) snippets ES6语法快捷键支持
+      language-stylus stylus语法提示
+      Stylus stylus CSS语法提示-->主要支持vue文件下stylus
+      Path Autocomplete 文件自动路径提示
+      VS Color Picker color: 自动提示
+      Vue 2 Snippets vue快捷键提示
+      VueHelper
+      vetur
+
+页面和接口参考：
+http://dev-efps.epaylinks.cn:7000/newpay/pas-portal//html/login.html

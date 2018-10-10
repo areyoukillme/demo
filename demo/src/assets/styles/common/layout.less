@@ -1,0 +1,266 @@
+//全局变量
+@import './variable.less';
+//容器
+
+a:hover {
+  color: @a-hover-color;
+}
+.app-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  //路由内容
+  .main-wrapper {
+    padding-left: 230px;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    background: #f8fafc;
+    &.open {
+      .side-wrapper {
+        display: none;
+      }
+      .main-container {
+        transition: left 0.5s ease-in-out;
+        left: 0;
+      }
+    }
+  }
+
+  // 大屏幕
+  &.hideSidebar {
+    .side-wrapper {
+      transform: translate(-150px, 0);
+      overflow: hidden;
+      .navbar {
+        transform: translate(150px, 0);
+        overflow: hidden;
+      }
+      .logo-box{
+        transform: translate(150px, 0);
+      }
+      &:hover {
+        transform: translate(0px, 0);
+        .navbar {
+          transform: translate(0px, 0);
+        }
+        .logo-box{
+          transform: translate(0, 0);
+        }
+      }
+    }
+    .main-wrapper {
+      padding-left: 40px;
+    }
+  }
+  // 小屏幕
+  &.hoverSideBar {
+    .side-wrapper {
+      transform: translate(-150px, 0);
+      .navbar {
+        transform: translate(150px, 0);
+      }
+      .logo-box{
+        transform: translate(150px, 0);
+      }
+      &.hover {
+        transform: translate(0px, 0);
+        .navbar {
+          transform: translate(0px, 0);
+        }
+        .logo-box{
+          transform: translate(0, 0);
+        }
+      }
+    }
+    .main-wrapper {
+      padding-left: 40px;
+    }
+  }
+}
+
+//tHeader
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #2f2e4b;
+  display: flex;
+  height: 80px;
+
+  color: @header-text;
+  box-shadow: 0px 3px 6px 0px 
+		rgba(0, 0, 0, 0.16);
+  z-index: 1099;
+  .logo-box {
+    transition: all .28s ease-out;
+    float: left;
+    width: 230px;
+    height: 80px;
+    color: #c0c0c0;
+    text-align: center;
+    background-color: #2f2e4b;
+    font-size: 18px;
+    line-height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left:20px;
+    img {
+     
+      
+      
+      
+    }
+    div{display: flex;justify-content:space-evenly; flex-direction: column; flex:1.5;line-height: 18px;}
+      p{text-align: left;font-size:12px;padding-left:10px;color:#8080b8}
+      h2{text-align: left;font-size:20px;padding-left:10px;line-height: 24px;color:#8080b8}
+
+  }
+  .header-inner {
+    flex:1;
+    padding: 0px 20px;
+    display: flex;
+    font-size: 30px;
+    .nav-icon {
+      width: 50px;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+      font-size: 30px;
+      margin-left: 20px;
+      &:hover {
+        background: rgba(0, 0, 0, .1);
+        cursor: pointer;
+      }
+    }
+  }
+  .header-menu {
+    
+    .ivu-menu{background: #2f2e4b}
+  }
+  .userBox {
+    height: 50px;
+    line-height: 80px;
+    float: right;
+    padding: 0 10px;
+  }
+  
+  .login-out {
+
+    line-height: 80px;
+    i{margin-left:20px;}
+    .out{color:#e25b28;}
+ 
+  }
+
+}
+
+//navBar
+.side-wrapper {
+  transition: all .28s ease-out;
+  position: absolute;
+  width: 230px;
+  background: @side-bar-bg;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  overflow: hidden;
+  &.light{
+    
+    .theme-switch{
+      
+    }
+  }
+  .nav-bar {
+    padding-bottom: 80px;
+  }
+  .nav-bar-inner {
+    transition: all .28s ease-out;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: -17px;
+    background-color: #2a2a45;
+    .ivu-menu{background: #2a2a45}
+  }
+
+
+  .theme-switch{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 40px;
+    line-height:40px;
+    text-align: center;
+    z-index: 901;
+  }
+}
+
+.main-container {
+  height: 100%;
+  background: #24253c;
+  position: absolute;
+  left: 230px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+.container {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.container-inner {
+  height: auto;
+  margin:30px;
+ 
+  &-con{
+    padding-bottom: 40px;
+    box-sizing: inherit;
+  }
+
+  .ivu-breadcrumb {
+    padding: 10px;
+    background-color: red;
+    border-radius: 10px;
+
+
+    
+  }
+  .ivu-breadcrumb>span:last-child {
+    font-weight: 700;
+    color:#8080b8;
+}
+
+
+  .main-container-box {
+    padding: 10px 10px 40px 10px;
+    background-color: #24253c;
+
+    border-radius: 10px;
+    overflow-x: hidden;
+  }
+}
+
+.footer {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+  position: relative;
+  color:#fff;
+  z-index: 9;
+}
+

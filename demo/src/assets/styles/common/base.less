@@ -1,0 +1,169 @@
+//全局变量
+@import './variable.less'; // 基础布局类
+body {
+  color: @text-color;
+}
+textarea {
+  resize: none;
+}
+em {
+  font-style: normal;
+}
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #8080b8;
+  width: 100%;
+  height:100%;
+}
+html,body{
+  width: 100%;
+  height:100%;
+}
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.a-box {
+  background: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  .a-box-body {
+    padding: 24px;
+  }
+}
+.subText {
+  color: @text-color;
+  font-size: 12px;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.ivu-table th, .ivu-table td {
+  &.min-width {
+    width: 200px !important;
+    min-width: 200px
+  }
+}
+.pas-delete-box {
+  .ivu-modal-footer,
+  .ivu-modal-header {
+    border: none;
+  }
+  .ivu-modal-header {
+    p {
+      font-size: 16px;
+      color: rgb(51, 51, 51);
+      font-weight: normal;
+    }
+    
+    .ivu-icon {
+      color: @warning-color;
+    }
+  }
+  .ivu-modal-body {
+    font-size: 14px;
+  }
+}
+
+.common-inner {
+  padding: 10px 15px 20px 15px;
+  .common-page-box {
+    margin-top: 20px;
+    text-align: right;
+    .ivu-page-options {
+      .ivu-page-options-sizer {
+        margin-right: 0px;
+      }
+    }
+  }
+  .common-inner-div {
+    padding: 20px 0px 20px;
+    .common-check-button {
+      margin-left: 100px;
+      button {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.text-center {
+  text-align: center;
+}
+.long {
+  width: 100%;
+}
+.date-time {
+  padding-top: 10px;
+  padding-bottom: 30px;
+
+  span {
+    cursor: pointer;
+    &:hover, 
+    &.current {
+    color: #3d5efa; 
+    }
+  }
+  em {
+    font-style: normal;
+    padding: 0 8px;
+  }
+
+}
+
+.common-page {
+  float: right;
+  margin-top: 20px;
+}
+.common-bottom {
+  margin: 20px;
+}
+.common-text-rg {
+  text-align: right;
+}
+.common-tab {
+  margin: 0px 15px 0;
+}
+.mg-tp-20 {
+  margin-top: 20px;
+}
+.mg-bt {
+  margin-bottom: 20px;
+}
+.hide {
+  display: none;
+}
+.new-box{
+  padding:20px 200px 0 50px;
+}
