@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5,user-scalable=no">
+		<meta name='viewport' content="width=device-width,initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5,user-scalable=no" />
+		<style>
+			.bigbox{position: relative;}
+			#box{width:50rem;height: 50rem;background: blue;display: flex;justify-content:space-around;align-items: center;position:absolute;}
+			
+		</style>
+		<script type="text/javascript" src="https://cdn.bootcss.com/echarts/4.2.0-rc.2/echarts-en.common.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="bigbox">
+			<div id="box" style="width:400px;height: 400px;">
+			
+		</div>
+		</div>
+	</body>
+	<script>
+			var weiChart = echarts.init(document.getElementById('box'));
+option = {
+
+// 设置间隙
+   grid:{
+	 x: '12.5%',
+        right: '12.5%',
+        bottom: '12.5%',
+        containLabel: false
+	},
+	
+
+   xAxis: {
+       type: 'category',
+       boundaryGap: false,
+		show:false
+ 
+   },
+   yAxis: {
+       type: 'value',
+		show:false
+		
+   },
+   series: [
+      
+       {
+           name:'',
+           type:'line',     
+           smooth:false,   //关键点，为true是不支持虚线，实线就用true
+		
+           itemStyle:{
+               normal:{
+                   lineStyle:{
+                       width:2,
+                       type:'dotted'  //'dotted'虚线 'solid'实线
+                   },
+//					实现数值
+					label:{
+						show:true
+					}
+               }
+           },            
+           data:[ 191, 234, "-", "-", "-"]
+       },
+       {
+           name:'',
+           type:'line',
+           data:["-",234, 190, 330, 222]
+       },
+       
+   ]
+};
+
+
+
+
+        weiChart.setOption(option);
+
+
+
+		</script>
+</html>	
