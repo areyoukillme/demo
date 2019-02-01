@@ -1,0 +1,265 @@
+.navbar_content {
+    height: 1.706666rem;
+    width: 100%;
+    background: #fff;
+    display: block;
+    position:relative;
+}
+   
+.navbar_box {
+    width: 100%;
+    padding: 0 2.933333rem;
+    height: 1.706666rem;
+    padding-top: 0.533333rem;
+    line-height: 1.173333rem;
+    font-size: 0.453333rem;
+    color: #030303;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    z-index: 999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #FFFF;
+    border-bottom: 0.026667rem solid #BFC0C4;
+}
+
+.navbar_box>.icon {
+    width: 1.333333rem;
+    height: 1.173333rem;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.navbar_box>.icon>img {
+    width: 0.48rem;
+    height: 0.48rem;
+    position: absolute;
+    left: 0.266666rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.share_container{
+    width:100%;
+    height:100%;
+    background-color: #f8f8f8;
+    position:absolute;
+    left:0;
+    top: 0;
+}
+.share_content{
+    width:100%;
+    height:100%;  
+    display:flex;
+    flex-direction: column;  
+}
+.share_content .load{
+    width:100%;
+    height:1.333333rem;
+    background-color: #fff;
+    padding:0.213333rem 0;
+    position:relative;
+}
+.share_content .load .logo{
+    width:0.906667rem;
+    height:0.8rem;
+    position:absolute;
+    left:0.333333rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.share_content .load .logo img{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.share_content .load .txt{
+    padding:0 2.133333rem 0  1.733333rem;
+}
+.share_content .load h1{
+    font-family: PingFangSC-Medium;
+    font-size: 0.373333rem;
+    color: #4A4A4A;
+}
+.share_content .load div{
+    font-family: PingFangSC-Regular;
+    font-size: 0.293333rem;
+    color: #4A4A4A;
+}
+.share_content .load .btn{
+    width:1.786667rem;
+    height:0.64rem;
+    line-height: 0.64rem;
+    background: #2ACC85;
+    text-align: center;
+    border-radius: 1.333333rem;
+    font-family: PingFangSC-Regular;
+    font-size: 0.293333rem;
+    color: #FFFFFF;
+    position:absolute;
+    right:0.333333rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.share_content .friends{
+    width:100%;
+    flex:1;
+    background:url('https://bhmall.zhiyesoft.cn/mp_images/farm/Group%202@2x.png') no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.share_content .friends .opacity{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.share_content .friends .friend_content{
+    width:9.333333rem;
+    height:4.16rem;
+    background-color: #fff;
+    position:absolute;
+    left:0.333333rem;
+    top: 5.333333rem;    
+    box-shadow: 0 2px 12px 0 rgba(60,84,214,0.50);
+    border-radius: 0.186667rem;
+    padding:0.266667rem;
+}
+
+.share_content .friends .friend_content div.txt{
+    margin-top: 1.44rem;
+}
+
+.share_content .friends .friend_content div.txt p{
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 0.453333rem;
+    color: #333333;
+}
+
+.share_content .friends .friend_content div.txt p span{
+    font-family: PingFangSC-Regular;
+    font-size: 0.453333rem;
+    color: #EA9531;
+    line-height: 48px;
+}
+.share_content .friends .friend_content div.head_img{
+    width:1.866667rem;
+    height:1.866667rem;
+    border-radius: 100%;
+    position:absolute;
+    left:50%;
+    top: -0.933333rem;
+    -webkit-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+.share_content .friends .friend_content div.head_img  img{
+    display:block;
+    width:100%;
+    height:100%;
+    border-radius: 100%;
+}
+.collect_state{
+    width:100%;
+    position:absolute;
+    left: 0;
+    top:10.133333rem;
+}
+.collect_state .collect_btn,.last_state .collect_btn{
+    width:7.333333rem;
+    height:1.306667rem;
+    line-height: 1.306667rem;
+    text-align: center;
+    background:url(../../assets/gameImg/group@2x.png) no-repeat center center;
+    background-size: contain;
+    margin:0 auto;
+    font-family: PingFangSC-Semibold;
+    font-size: 0.48rem;
+    color: #572F01;
+} 
+.friends .friend_content h3{
+    width:100%;
+    height:1.333333rem;
+    font-family: PingFangSC-Regular;
+    font-size: 0.373333rem;
+    color: #999999;
+    text-align: right;
+}
+.friends .friend_content h3 span{
+    font-family: PingFangSC-Regular;
+    font-size: 0.373333rem;
+    color: #EA9838;
+    line-height: 40px;
+}
+.friends .friend_content ul{
+    width:100%;
+    height:1.866667rem;
+    overflow:auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.friends .friend_content li{
+    flex:1;
+    float:left;
+    padding:0 0.533333rem;
+}
+.friends .friend_content li .headerUrl_img{
+    width:1.866667rem;
+    height:1.866667rem;
+    margin:0 auto;
+    border-radius: 100%;
+}
+.friends .friend_content li .headerUrl_img img{
+    display:block;
+    width:100%;
+    height:100%;
+    border-radius: 100%;
+}
+.collect_state{
+    width:100%;
+    position:absolute;
+    left: 0;
+    top:10.666667rem;
+}
+.collect_state .collect_btn{
+    width:7.333333rem;
+    height:1.306667rem;
+    line-height: 1.306667rem;
+    text-align: center;
+    background:url(../../assets/gameImg/group@2x.png) no-repeat center center;
+    background-size: contain;
+    margin:0 auto;
+    font-family: PingFangSC-Semibold;
+    font-size: 0.48rem;
+    color: #572F01;
+
+} 
+.collect_state p{
+    font-family: PingFangSC-Regular;
+    font-size: 0.373333rem;
+    color: #D6D6D6;
+    text-align: center;
+    margin-top: 0.266667rem;
+}
+.last_state{
+    width:100%;
+    position:absolute;
+    left: 0;
+    top:12.5rem;
+}

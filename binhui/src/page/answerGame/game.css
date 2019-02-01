@@ -1,0 +1,532 @@
+/* 
+* @Author: Yue
+* @Date:   2018-11-20 18:43:26
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-01-19 11:44:22
+*/
+
+.game_container{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+
+/*内容部分*/
+.game_content{
+    width:100%;
+    height:auto;
+    background-color: #011937;
+    padding:0.266667rem;
+    flex:1;
+    position:relative;
+}
+.game_container  .game_content .mask{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top: 0;
+    background: rgba(0,0,0,0.60);
+    z-index: 99;
+}
+.game_content .friends{
+    text-align: right;
+    font-family: PingFangSC-Semibold;
+    font-size: 0.373333rem;
+    color: #FFFFFF;
+}
+.game_content .content_list {
+    padding-top: 0.266667rem;
+}
+.game_content .content_list li{
+    width:100%;
+    height:3.466667rem;
+    position:relative;
+    border-radius: 0.266667rem;
+    margin-top: 0.4rem;
+}
+li .bgimg{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top: 0;
+}
+li .bgimg img{
+    width:100%;
+    height:100%;
+}
+.game_content .content_list li:first-child{
+    margin-top: 0;
+}
+.game_content .content_list li .img{
+    width:50%;
+    height:100%;
+    float: left;
+    position:relative;
+}
+.game_content .content_list li .img .good_img{
+    width:3.2rem;
+    height:3.093333rem;
+    position:absolute;
+    right:0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.game_content .content_list li .txt{
+    width:50%;
+    height:100%;
+    position:absolute;
+    right:0;
+    top: 0;
+}
+.game_content .content_list li .txt  div{
+    font-family: PingFangSC-Semibold;
+    font-size: 0.426667rem;
+    color: #fff;
+    padding-left: 0.133333rem;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: normal !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding-top: 0.066667rem;
+}
+
+.game_content .content_list li .txt  .win div{
+    display:inline-block;
+}
+.game_content .content_list li .txt .win div:first-child{
+    font-family: PingFangSC-Regular;
+    font-size: 0.266667rem;
+    color: #fff;
+}
+.game_content .content_list li .txt .win div:last-child{
+    width:1.133333rem;
+    height:0.64rem;
+    text-align: center;
+    background: #C8E1FF;
+    border-radius: 1.333333rem;
+    font-size: 0.373333rem;
+    margin-left: 0.16rem;
+    color: #3500C9;
+}
+.game_content .content_list li .txt .good_number:first-child{
+    margin-top: 0.24rem;
+}
+.game_content .content_list li .txt .good_number:last-child{
+    margin:0;
+}
+.game_content .content_list li img{
+    width:100%;
+    height:100%;
+}
+.game_content .content_list li .btn{
+    width:2.853333rem;
+    height:1.0rem;
+    line-height: 1.0rem;
+    text-align: center;
+    color:#fff;
+    font-family: PingFangSC-Semibold;
+    font-size: 0.48rem;
+    position:absolute;
+    right:0;
+    bottom:0.066667rem;
+    background-image: linear-gradient(-270deg, #F71C4F 0%, #FAA661 100%);
+    border-radius: 0.626667rem;
+}
+.game_content .content_list li .disable_model{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0, .6);
+}
+.game_content .content_list li .btn.disabled{
+    background-image: none;
+    background-color: #999;
+}
+.game_content .content_list li .btn.disabled img{
+    width:0.533333rem;
+    height:0.533333rem;
+    display:block;
+    position:absolute;
+    left:50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+       -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+         -o-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+.game_container .Chest{
+    width:1.493333rem;
+    height:1.173333rem;
+    position:fixed;
+    left: 0.586667rem;
+    bottom:1.36rem;
+    z-index: 999;
+}
+.game_container .Chest .chest_num{
+    width:0.48rem;
+    height:0.48rem;
+    line-height: 0.38rem;
+    text-align: center;
+    border:0.04rem solid #FFB700;
+    background:#D0021B;
+    font-family: PingFangSC-Semibold;
+    font-size: 0.32rem;
+    color: #FFFFFF;
+    border-radius: 50%;
+    position:absolute;
+    right:-0.093333rem;
+    top: -0.133333rem;
+}
+.game_container .Chest img{
+    width:100%;
+    height:100%;
+}
+/*弹窗题目*/
+.game_container .subject{
+    z-index: 999;;
+    width:7.466667rem;
+    padding:0.333333rem;
+    background: #FFFFFF;
+    border-radius: 0.266667rem;
+    position:fixed;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+.game_container .subject .subject_content{
+    padding-top:2.0rem;
+}
+.game_container .subject h3{
+    font-family: PingFangSC-Semibold;
+    font-size: 0.48rem;
+    color: #333333;
+    text-align: center;
+    margin: 0.266667rem  0;
+}
+.game_container .subject .title li{
+    width:100%;
+    height:1.173333rem;
+    line-height: 1.173333rem;
+    text-align: center;
+    background: #F8FAFB;
+    border:0.026667rem solid #979797;
+    border-radius: 1.333333rem;
+    font-size: 0.48rem;
+    font-family: PingFangSC-Semibold;
+    color: #333333;
+    position:relative;
+    margin-top: 0.266667rem;
+}
+.game_container .subject .title  li.actived{
+    background-color: #5AF1AF;
+    border:0.026667rem solid #2ACC85;
+}
+.game_container .subject .title li span{
+    position:absolute;
+    left:0.4rem;
+}
+.game_container .subject .input_num input{
+    width:100%;
+    height:1.066667rem;
+    border: 0.026667rem solid #f2f2f2;
+    border-radius: 0.266667rem;
+    font-size: 0.48rem;
+    text-align: center;
+}
+.game_container .subject .input_num  .confim{
+    width:100%;
+    height:0.8rem;
+    line-height: 0.8rem;
+
+}
+.game_container .subject .input_num .confim div{
+    width:4.0rem;
+    background-color: #5AF1AF;
+    color:#fff;
+    margin:0.533333rem auto;
+    text-align: center;
+    border-radius: 0.8rem;
+}
+
+.demo1-bg2-1,.demo1-bg2-2{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    -webkit-box-flex: 1;
+    height: 1.066667rem;
+
+}
+.demo1-bg2-1{
+    border-radius: 50px 0 0 50px;
+    border-color: grey transparent grey grey;
+    transform-origin: 100% 50%;
+    z-index: 1;
+}
+.demo1-bg2-2{
+    border-radius: 0 50px 50px 0;
+    border-color: grey grey grey transparent;
+    transform-origin: 0 50%;
+    z-index: 2;
+}
+
+.game_container .subject .outer{
+    width:2.266667rem;
+    height:2.266667rem;
+    line-height: 2.266667rem;
+    text-align: center;
+    font-family: PingFangSC-Semibold;
+    font-size:0.64rem;
+    color: #2ACC85;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.16rem #2ACC85 inset;
+    position: absolute;
+    left: 50%;
+    top: -0.8rem;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-border-radius: 50%;  
+    background: #E5FFF4;
+}
+
+/*弹窗正确*/
+.game_container .subject .subject_content .correct h1{
+    font-family: PingFangSC-Semibold;
+    font-size: 0.533333rem;
+    color: #2ACC85;
+    text-align: center;
+    margin-top: 0.266667rem;
+}
+.game_container .subject .subject_content .correct .go{
+    width:4.16rem;
+    height:1.173333rem;
+    line-height: 1.173333rem;
+    text-align: center;
+    background: #2ACC85;
+    border-radius: 1.333333rem;
+    font-family: PingFangSC-Semibold;
+    font-size: 0.48rem;
+    color: #FFFFFF;
+    margin:0.8rem auto;
+}
+.game_container .subject .outer .check_right{
+    width:100%;
+    height:100%;
+    background: #E5FFF4;
+    border-radius: 50%;
+}
+.game_container .subject .outer .check_img,.game_container .subject .outer .error_img{
+    width:1.066667rem;
+    height:0.933333rem;
+    position:absolute;
+    left:50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+       -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+         -o-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+.game_container .subject .outer .check_img  img,.game_container .subject .outer .error_img img{
+    display:block;
+    width:100%;
+    height:100%;
+}
+
+/*弹窗错误*/
+.game_container .subject .error h1{
+    font-family: PingFangSC-Semibold;
+    font-size: 0.533333rem;
+    color: #FF5555;
+    text-align: center;
+}
+.game_container .subject .error div{
+    font-family: PingFangSC-Semibold;
+    font-size:0.426667rem;
+    color: #333333;
+    text-align: center;
+    margin-top: 0.266667rem;
+}
+.game_container .subject .error li{
+    height:1.173333rem;
+    line-height: 1.173333rem;
+    background: #E5FFF4;
+    border: 0.026667rem solid #2ACC85;
+    border-radius: 1.333333rem;
+    font-family: PingFangSC-Regular;
+    font-size: 0.4rem;
+    color: #333333;
+    text-align: center;
+    margin-top: 0.266667rem;
+}
+.game_container .subject .error li.cancel_btn{
+    background: #F8FAFB;
+    border: 0.013333rem solid #979797;
+    border-radius: 1.333333rem;
+}
+.game_container .subject .error li span{
+    font-family: PingFangSC-Regular;
+    font-size: 0.4rem;
+    color: #2ACC85;
+}
+.game_container .subject .error_box{
+    width:100%;
+    height:100%;
+    background: #FFD6D6;
+    border-radius: 50%;
+}
+/*提示*/
+.prompt{
+    /*z-index: 999;*/
+    width:7.466667rem;
+    padding:0.666667rem;
+    background-color: #fff;
+    position:fixed;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            border-radius: 0.266667rem;
+}
+.prompt .title{
+    text-align: center;
+    font-family: PingFangSC-Semibold;
+    font-size: 0.48rem;
+    color: #333333;
+    margin-bottom: 0.96rem;
+}
+.prompt .begin{
+    width:100%;
+    height:1.173333rem;
+    line-height: 1.173333rem;
+    background: #E5FFF4;
+    border: 0.026667rem solid #2ACC85;
+    border-radius: 1.333333rem;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 0.4rem;
+    color: #333333;
+}
+.prompt .begin span{
+    font-family: PingFangSC-Regular;
+    font-size: 0.4rem;
+    color: #2ACC85;
+}
+.prompt .begin.mtb{
+    margin-top: 0.266667rem;
+}
+.prompt .begin.abandon{
+    background: #F8FAFB;
+    border: 0.026667rem solid #979797;
+    border-radius: 1.333333rem;
+    margin-top: 0.266667rem;
+}
+.revive{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 99;
+}
+.revive_btn{
+    width:3.466667rem;
+    height:1.333333rem;
+    line-height: 1.333333rem;
+    background: rgba(77,207,146,0.90);
+    border-radius: 1.333333rem;
+    position:absolute;
+    font-family: PingFangSC-Medium;
+    font-size: 0.426667rem;
+    text-align: center;
+    color: #FFFFFF;
+    left: 50%;
+    top: 1.133333rem;
+    -webkit-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+            z-index: 99;
+}
+.revive_btn.disabled{
+    background: #999;
+}
+.marsk{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.8);
+    position:absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+.marsk_model{
+    width:100%;
+    height:100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom:0;
+    background:rgba(0,0,0,.8);
+}
+.model{
+    width:8.0rem;
+    height:auto;
+    background:#fff;
+    padding:0.266667rem;
+    -webkit-border-radius: 0.2rem;
+    border-radius:  0.2rem;
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+       transform: translate(-50%,-50%);
+}
+.model .j_img{
+    width:100%;
+    height:3.466667rem;
+    -webkit-border-radius: 0.2rem;
+    border-radius:  0.2rem;
+}
+.model .j_img img{
+    display:block;
+    width:100%;
+    height:100%;
+    -webkit-border-radius: 0.2rem;
+    border-radius:  0.2rem;
+}
+.model .title{
+    padding-top:0.266667rem;
+    font-size: 0.4rem;
+    font-weight: bold;
+    color:#333;
+}
+.model .content{
+    padding-top:0.266667rem;
+    font-size: 0.373333rem;
+}

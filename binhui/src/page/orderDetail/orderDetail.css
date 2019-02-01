@@ -1,0 +1,304 @@
+/* 
+* @Author: Yue
+* @Date:   2018-11-21 10:05:43
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-01-19 10:51:26
+*/
+.order_container{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+/*内容*/
+.seedsorder_box {
+    width: 100%;
+    background: #f8f8f8;
+}
+
+.seed_title {
+    width: 100%;
+    height: 1.6rem;
+    background-image: linear-gradient(90deg, #7CC65E 0%, #96D673 76%);
+    padding: 0 0.4rem;
+    position:relative;
+}
+
+.seed_title span {
+    display: block;
+    color: #fff;
+    line-height: 1.6rem;
+    font-size: 0.4rem;
+}
+
+.seed_content {
+    width: 100%;
+    box-shadow: 0  0.013333rem 0 #e0e0e0;
+    background: #fff;
+    margin-top: 0.266667rem;
+    border-radius: 0.266667rem;
+}
+
+.seed_box {
+    width: 100%;
+    padding: 0 0.4rem;
+}
+
+.seed_item {
+    padding-top: 0.266667rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0.266667rem;
+}
+
+.seed_item:last-of-type {
+    border-bottom: 0.013333rem solid #e0e0e0 !important;
+}
+
+.seed_img {
+    width: 2.4rem;
+    height: 2.4rem;
+    overflow:hidden;
+}
+/*.seed_img  img{
+    display: block;
+    width:100%;
+    height:100%;
+}*/
+.parameter {
+    width: 6.666667rem;
+    height: 2.4rem;
+}
+
+.parameter_top {
+    width: 100%;
+    height: 1.066667rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.parameter_top .title {
+    width: 4.48rem;
+    height: 1.066667rem;
+    font-size: 0.373333rem;
+    line-height: 0.533333rem;
+}
+
+.parameter_top .title span {
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.parameter_top .m {
+    font-size: 0.373333rem;
+    color: #666;
+}
+
+.parameter_center {
+    width: 100%;
+    height: 0.693333rem;
+    margin-top: 0.613333rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.32rem;
+}
+
+.parameter_center span {
+    color: #c0c0c0;
+}
+
+.shop_m {
+    width: 100%;
+    margin-top: 0.4rem;
+    font-size: 0.32rem;
+    border-bottom: 0.026667rem solid #ECECEC;
+    padding-bottom: 0.266667rem;
+}
+
+.shop_j {
+    height: 0.533333rem;
+    width: 100%;
+    padding: 0.053333rem 0 0.053333rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.32rem;
+    font-family: PingFangSC-Regular;
+}
+
+.shop_m span {
+    color: #999;
+}
+
+.shishu {
+    width: 100%;
+    height: 1.146667rem;
+    padding: 0 0.4rem;
+    font-size: 0.32rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color:#333;
+}
+
+.shishu span:nth-of-type(2) {
+    color: #f55;
+    font-size: 0.373333rem;
+    margin-left: 0.266667rem;
+}
+
+.tiem_box {
+    margin-top: 0.266667rem;
+    width: 100%;
+    background: #fff;
+    padding: 0 0.4rem;
+    border-radius: 0.133333rem;
+}
+
+.tiem_box .t {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 1.866667rem;
+    font-size: 0.32rem;
+    border-bottom: 0.026667rem solid #ECECEC;
+    padding: 0.32rem 0 0.346667rem 0;
+    color: #999;
+}
+
+.tiem_box .t span {
+    font-size: 0.32rem;
+    font-family: PingFangSC-Regular;
+    color: #999;
+}
+
+.tiem_box .fangshi span {
+    display: block;
+    font-size: 0.32rem;
+    line-height: 1.093333rem;
+    color: #999;
+    font-family: PingFangSC-Regular;
+}
+
+.address_box {
+    width: 100%;
+    background: #fff;
+    padding: 0 0.4rem;
+    border-radius: 0.266667rem;;
+}
+
+.site_box {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.026667rem solid  #ECECEC;
+}
+.site_box:nth-last-of-type(1) {
+ 
+    border-bottom: none;
+}
+
+.site_box .admin {
+    width: 100%;
+    height: 0.88rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0.346667rem;
+    font-size: 0.373333rem;
+     border-bottom: 0px solid #f1f1f1!important;
+}
+.site_box .admin span{
+    font-family: PingFangSC-Regular;
+    font-size: 0.373333rem;
+}
+.site_box .admin .stext {
+    font-family: PingFangSC-Regular;
+    font-size: 0.373333rem;
+    color: #2ACC85;
+}
+
+.site_box .site_content .stime {
+    color: #c0c0c0;
+    font-size: 0.266667rem;
+    margin-top: 0.266667rem;
+}
+
+.site_box .address {
+    font-size: 0.32rem;
+    color: #666;
+    line-height: 0.453333rem;
+}
+
+.site_box .tu_icon {
+    height: 0.426667rem;
+    width: 0.426667rem;
+    position:relative;
+}
+
+.site_box .tu_icon .s_left {
+    height: 0.426667rem;
+    width: 0.426667rem;
+}
+
+.site_box .tu_icon .s_rigth {
+    height: 0.426667rem;
+    width: 0.24rem;
+}
+
+.site_content {
+    width: 7.68rem;
+    height: 100%;
+    margin-bottom: 0.48rem;
+}
+
+.site_content_m {
+    margin-bottom: 0.213333rem;
+}
+
+.site_content_m .admin {
+    width: 7.68rem;
+    height: 100%;
+    margin-bottom: 0.4rem;
+}
+
+.site_content .txt {
+    display: block;
+    height: 1.066667rem;
+    width: 100%;
+    line-height: 1.066667rem;
+    font-size: 0.346667rem;
+    margin-top: 0.48rem;
+}
+
+.seedsorder_box .time {
+    height: 0.453333rem;
+    right: 0.533333rem;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 0.453333rem;
+    padding-left: 0.586667rem;
+    font-size: 0.32rem;
+    color: #fff;
+    position:absolute;
+}
+
+.seedsorder_box .time img {
+    width: 0.373333rem;
+    height: 0.373333rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

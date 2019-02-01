@@ -1,0 +1,206 @@
+/* 
+* @Author: Marte
+* @Date:   2018-11-26 18:07:25
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-01-18 14:15:31
+*/
+
+.container{
+    width:100%;
+    height:100%;
+    background-color: #f8f8f8;
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+
+.content{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.content .nav{
+    width:2.533333rem;
+    height:1.04rem;
+    line-height: 1.04rem;
+    z-index: 99;
+    background: rgba(255,255,255,0.58);
+    position:absolute;
+    left: 0;
+    top: 0.133333rem;
+    font-family: PingFangSC-Semibold;
+    font-size: 0.426667rem;
+    color: #4A4A4A;
+    border-top-right-radius: 1.333333rem;
+    border-bottom-right-radius: 1.333333rem;
+}
+.content .nav.word_color{
+    color: #FF9E00;
+    font-family: PingFangSC-Semibold;
+    font-size: 0.48rem;
+}
+.content .nav div.header_name{
+    width: 1.8rem;
+    font-size: 0.32rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 0.2rem;
+}
+.content .nav div.header_img{
+    width:0.773333rem;
+    height:0.773333rem;
+    border-radius: 50%;
+    position:absolute;
+    right:0.066667rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+    
+}
+.content .nav div.header_img img{
+    display:block;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+.content .friends{
+    width:100%;
+    max-height: 800px;
+    padding:0.266667rem;
+    border-radius: 0.266667rem;
+    background: #fff;
+    position: relative;
+    left: 0;
+    bottom: 1.066667rem;
+    overflow-y: scroll;
+}
+.content .tree_img{
+    position:relative;
+    width:100%;
+    height:100%;
+    background:url(https://bhmall.zhiyesoft.cn/mp_images/farm/treebg.png) center center no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.content .tree_img .ball_box{
+    position:absolute;
+    width:100%;
+    height:10.666666rem;
+    left:0;
+    top: 1.226667rem;
+}
+.content .tree_img .ball_box li{
+    width:1.2rem;
+    height:1.733333rem;
+    position:absolute;
+}
+
+.content .tree_img .ball_box li div{
+    width:1.2rem;
+    height:1.2rem;
+}
+.content .tree_img .ball_box li div img{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.content .tree_img .ball_box li p{
+    text-align: center;
+    font-family: PingFangSC-Semibold;
+    font-size: 0.373333rem;
+    color: #FF9E00;
+}
+.content .friends p.friend,.friend_todo p.friend,.every_day p.friend{
+    font-family: PangMenZhengDao;
+    font-size: 0.48rem;
+    color: #666666;
+    margin-bottom: 0.266667rem;
+}
+.content .friends ul,.friend_todo ul{
+    width:100%;
+}
+.content .friends ul li,.friend_todo ul li{
+    width:100%;
+    height:1.066667rem;
+    line-height: 1.066667rem;
+    display:flex;
+    border-bottom: 0.013333rem solid #E9E9E9;
+}
+.content .friends ul li:last-child{
+    /*border-bottom: 0;*/
+}
+.content ul li .friend_name{
+    flex:1;
+    position:relative;
+}
+.content ul li .friend_name div.img{
+    width:0.8rem;
+    height:0.8rem;
+    border-radius: 50%;
+    position:absolute;
+    left:0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.content ul li .friend_name div.img img{
+    display:block;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+.content ul li .friend_name p{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: PingFangSC-Semibold;
+    font-size: 0.4rem;
+    color: #4A4A4A;
+    position:absolute;
+    left:1.066667rem;
+    top: 0;
+}
+.content ul li .pick{
+    width:2.133333rem;
+    position:relative;
+}
+.content ul li .pick div.img{
+    width:0.533333rem;
+    height:0.533333rem;
+    position:absolute;
+    right:1.333333rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.content ul li .pick div.img img{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.content .friends .pick p{
+    font-family: PingFangSC-Regular;
+    font-size: 0.346667rem;
+    color: #E99114;
+    text-align: right;
+}
+.content .friends .pick.pick99 p{
+    color:#999;
+}
+.more{
+    width: 100%;
+    height: 1.066667rem;
+    line-height: 1.066667rem;
+    text-align: center;
+}
